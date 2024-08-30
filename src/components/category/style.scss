@@ -1,0 +1,19 @@
+.category {
+  min-height: 400px;
+  text-align: center;
+  &__main {
+    &-cards {
+      display: flex;
+      column-gap: 10px;
+    }
+    &-card {
+      margin-bottom: 20px;
+    }
+    &-link {
+      transition: all ease 0.4s;
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+}
