@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  &__list {
+    display: flex;
+    column-gap: 24px;
+    &-item {
+      transition: all ease 0.5s;
+    }
+    &-item:hover {
+      border-bottom: 1px solid black;
+    }
+  }
+  &__userTools {
+    display: flex;
+    column-gap: 24px;
+  }
+}
