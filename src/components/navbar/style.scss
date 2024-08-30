@@ -7,14 +7,33 @@
     display: flex;
     column-gap: 24px;
     &-item {
-      transition: all ease 0.5s;
+      position: relative;
     }
-    &-item:hover {
-      border-bottom: 1px solid black;
+    &-item:before {
+      content: "";
+      position: absolute;
+      top: 53px;
+      width: 100%;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.5s ease;
+    }
+    &-item:hover::before {
+      border-bottom: 3px solid black;
     }
   }
   &__userTools {
     display: flex;
     column-gap: 24px;
+  }
+}
+
+.downMenu {
+  padding: 30px 0;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
   }
 }

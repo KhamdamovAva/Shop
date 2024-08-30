@@ -11,15 +11,15 @@ function Navbar() {
     <>
       <div className="container">
         <nav className='menu'>
+          <div className="logo">
+            <a href="#"><img src={logo} alt="Logotype" /></a>
+          </div>
           <ul className="menu__list">
             <li className="menu__list-item"><a href="#" className="menu__list-link">Women</a></li>
             <li className="menu__list-item"><a href="#" className="menu__list-link">Men</a></li>
             <li className="menu__list-item"><a href="#" className="menu__list-link">About</a></li>
             <li className="menu__list-item"><a href="#" className="menu__list-link">Everworld Stories</a></li>
           </ul>
-          <div className="logo">
-            <a href="#"><img src={logo} alt="Logotype" /></a>
-          </div>
           <div className="menu__userTools">
             <a href="#"><img src={search} alt="Search" /></a>
             <a href="#"><img src={user} alt="User" /></a>
@@ -28,6 +28,21 @@ function Navbar() {
         </nav>
       </div>
       <hr className='bottomLine' />
+      <div className="container">
+        <nav className='downMenu'>
+          <ul className="downMenu__list">
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Holiday Gifting</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">New Arrivals</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Best-Sellers</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Clothing</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Tops & Sweaters</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Pants & Jeans</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Outerwear</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link">Shoes & Bags</a></li>
+            <li className="downMenu__list-item"><a href="#" className="downMenu__list-link text-red-500">Sale</a></li>
+          </ul>
+        </nav>
+      </div>
     </>
 
   )
