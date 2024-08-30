@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import { category } from '../../categoryData.js'
+import { category } from '../../Dates/categoryData'
 
 function Category() {
   return (

@@ -5,3 +5,21 @@
   background-position: center;
   min-height: 100vh;
 }
+
+.header__content {
+  position: absolute;
+  bottom: 100px;
+  color: white;
+  text-align: center;
+  &-title {
+    font-size: 46px;
+    letter-spacing: 0.02em;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  &-text {
+    font-weight: 100;
+    font-size: 23px;
+    margin-bottom: 24px;
+  }
+}

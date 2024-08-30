@@ -1,0 +1,14 @@
+.whiteBtn {
+  padding: 12px 0px;
+  width: 240px;
+  height: 41px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: black;
+  background-color: white;
+  transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
