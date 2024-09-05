@@ -1,3 +1,4 @@
+import About from "./components/about/About"
 import Category from "./components/category/Category"
 import Header from "./components/header/Header"
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Category />
+      <About />
     </>
   )
 }
