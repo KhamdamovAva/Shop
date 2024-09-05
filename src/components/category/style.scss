@@ -1,7 +1,14 @@
+@mixin imgSetting {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .category {
-  min-height: 400px;
+  min-height: 900px;
   text-align: center;
+  padding-bottom: 40px;
   &__main {
+    margin-bottom: 60px;
     &-cards {
       display: flex;
       column-gap: 10px;
@@ -14,6 +21,34 @@
       &:hover {
         border-bottom: 2px solid black;
       }
+    }
+  }
+}
+
+.sellers {
+  display: flex;
+  justify-content: space-between;
+  &__content {
+    width: 460px;
+    height: 534px;
+    padding-top: 240px;
+    color: white;
+    &-title {
+      font-size: 36px;
+      letter-spacing: 0.01em;
+      margin-bottom: 20px;
+    }
+    &-img1 {
+      @include imgSetting;
+      background-image: url("../../assets/images/category__img7.png");
+    }
+    &-img2 {
+      @include imgSetting;
+      background-image: url("../../assets/images/category__img8.png");
+    }
+    &-img3 {
+      @include imgSetting;
+      background-image: url("../../assets/images/category__img9.png");
     }
   }
 }

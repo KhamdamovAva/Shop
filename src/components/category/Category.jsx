@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import { category } from '../../Dates/categoryData'
+import WhiteBtn from '../whiteButton/WhiteBtn'
 
 function Category() {
   return (
@@ -16,6 +17,20 @@ function Category() {
                   <a className='category__main-link' href="#">{item.title}</a>
                 </div>
               ))}
+            </div>
+          </div>
+          <div className="sellers">
+            <div className="sellers__content sellers__content-img1">
+              <h3 className='sellers__content-title'>New Arrivals</h3>
+              <WhiteBtn text={"SHOP THE LATEST"} />
+            </div>
+            <div className="sellers__content sellers__content-img2">
+              <h3 className='sellers__content-title'>Best-Sellers</h3>
+              <WhiteBtn text={"SHOP YOUR FAVORITES"} />
+            </div>
+            <div className="sellers__content sellers__content-img3">
+              <h3 className='sellers__content-title'>The Holiday Outfit</h3>
+              <WhiteBtn text={"SHOP OCCASION"} />
             </div>
           </div>
         </div>
